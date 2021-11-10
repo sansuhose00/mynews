@@ -18,7 +18,7 @@
             @endif
             <div class="form-group row">
               <label class="col-md-2" for="name">名前</label>
-              <div class="col-md-3">
+              <div class="col-md-10">
                 <input type="text" class="form-control" name="name" value={{ old('name') }}>
               </div>
             </div>
@@ -36,8 +36,8 @@
           </div>
           <div class="form-group row">
             <label class="col-md-2" for="hobby">趣味</label>
-            <div class="col-md-4">
-            <textarea class="form-control" name="hobby" rows="2">{{ old('hobby') }}</textarea>
+            <div class="col-md-10">
+            <textarea class="form-control" name="hobby" rows="1">{{ old('hobby') }}</textarea>
             </div>
           </div>
           <div class="form-group row">
