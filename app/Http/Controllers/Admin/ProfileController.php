@@ -59,14 +59,7 @@ class ProfileController extends Controller
       $profile = Profile::find($request->id);
 
       $profile_form = $request->all();
-      if ($request->remove == 'true') {
-         $profile_form['image_path'] = null;
-     } elseif ($request->file('image')) {
-         $path = $request->file('image')->store('public/image');
-         $profile_form['image_path'] = basename($path);
-     } else {
-         $profile_form['image_path'] = $profile->image_path;
-     }
+      
 
      unset($profile_form['image']);
      unset($profile_form['remove']);
