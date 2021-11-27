@@ -59,7 +59,7 @@ class ProfileController extends Controller
       $profile = Profile::find($request->id);
 
       $profile_form = $request->all();
-      
+
 
      unset($profile_form['image']);
      unset($profile_form['remove']);
